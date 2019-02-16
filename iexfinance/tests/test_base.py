@@ -10,14 +10,14 @@ def block_format_env():
         del os.environ["IEX_OUTPUT_FORMAT"]
 
 
-@pytest.fixture
+@pytest.yield_fixture
 def pandas_format():
     os.environ["IEX_OUTPUT_FORMAT"] = 'pandas'
     yield
     del os.environ["IEX_OUTPUT_FORMAT"]
 
 
-@pytest.fixture
+@pytest.yield_fixture
 def bad_format():
     os.environ["IEX_OUTPUT_FORMAT"] = 'BADFORMAT'
     yield

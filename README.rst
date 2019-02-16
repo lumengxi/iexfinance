@@ -15,7 +15,7 @@ iexfinance
 
 
 Python SDK for `IEX Cloud <https://iexcloud.io>`__ and the legacy
-`Investors Exchange (IEX) <https://iextrading.com/>`__
+`Version 1.0 Investors Exchange (IEX) <https://iextrading.com/>`__
 `Developer API <https://iextrading.com/developer/>`__. Architecture mirrors
 that of the IEX Cloud API (and its `documentation <https://iexcloud.io/docs/api/>`__).
 
@@ -279,6 +279,16 @@ Modeling/Valuation Tools
 .. code-block:: python
 
     aapl.get_price_target()
+
+Social Sentiment
+^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    from iexfinance.altdata import get_social_sentiment
+
+    get_social_sentiment()
+
 
 Reference Data
 ~~~~~~~~~~~~~~
